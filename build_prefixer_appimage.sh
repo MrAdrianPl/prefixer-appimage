@@ -6,7 +6,7 @@ SHARUN="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/h
 
 export ICON=DUMMY
 export DESKTOP=DUMMY
-export OUTPATH=./dist
+export OUTPATH=/dist
 export MAIN_BIN=prefixer
 export OUTNAME=prefixer-"$ARCH".AppImage
 export DEPLOY_PYTHON=1
@@ -21,7 +21,7 @@ pacman -Syu --noconfirm \
 	python-pip
 
 
-echo "Installing debloated packages..."
+echo "Installing app via pip..."
 echo "---------------------------------------------------------------"
 
 pip install prefixer --break-system-packages
