@@ -3,13 +3,13 @@ set -eux
 
 ARCH="$(uname -m)"
 SHARUN="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/quick-sharun.sh"
-
-export VERSION=$(pip show prefixer | awk 'FNR == 2  {print $2}')
+VERSION=$(pip show prefixer | awk 'FNR == 2  {print $2}')
+export ARCH VERSION
 export ICON=DUMMY
 export DESKTOP=DUMMY
 export OUTPATH=/dist
 export MAIN_BIN=prefixer
-export OUTNAME=prefixer-"$ARCH".AppImage
+export OUTNAME=prefixer-"$VERSION"-"$ARCH".AppImage
 export DEPLOY_PYTHON=1
 
 pacman -Syu --noconfirm \
