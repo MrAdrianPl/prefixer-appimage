@@ -4,6 +4,7 @@ set -eux
 ARCH="$(uname -m)"
 SHARUN="https://raw.githubusercontent.com/pkgforge-dev/Anylinux-AppImages/refs/heads/main/useful-tools/quick-sharun.sh"
 
+export VERSION=$(pip show prefixer | awk 'FNR == 2  {print $2}')
 export ICON=DUMMY
 export DESKTOP=DUMMY
 export OUTPATH=/dist
