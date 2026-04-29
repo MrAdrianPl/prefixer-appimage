@@ -2,8 +2,8 @@ name: Build AppImage
 
 run-name: building appimage
 on:
-  release:
-    types: [published]
+  push:
+    branches: [ master ]
   workflow_dispatch: {}
 
 jobs:
