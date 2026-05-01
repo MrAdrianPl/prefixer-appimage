@@ -59,7 +59,7 @@ pipx install prefixer
 
 ### Appimage
 just download appimage build and you have portable version which can be invoked from anywhere.
-if you'd like to have prefixer easily accessible in the console then move it to home/<user>/.local/bin/ rename packaged binary to prefixer removing extension
+if you'd like to have prefixer easily accessible in the console then move it to ```home/<user>/.local/bin/``` rename packaged binary to prefixer removing extension
 
 this is appimage version which does not need fuse2
 
